@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, my site!</title>
+</head>
+<style>
+    p
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body
+    {
+        background-color:  #DAF7A6  ;
+    }
+    .image-container 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .image1
+    {
+        width: 200px;
+        margin: 30px;
+        transform: rotate(-35deg);
+    }
+    .image2
+    {
+        margin: 50px;
+        transform: rotate(-15deg);
+    }
+    .image3
+    {
+        margin: 50px;
+        transform: rotate(15deg);
+    }
+    .image4
+    {
+        width: 200px;
+        margin: 50px;
+        transform: rotate(35deg);
+    }
+    .image5
+    {
+        margin: 50px;
+        margin-top: 50px; 
+        transform: none;
+        transform: rotate(90deg);
+    }
+    .imgCon
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-left: -650px;
+    }
+    @keyframes fadeIn 
+    {
+        from
+        {
+            opacity: 0;
+        }
+        to
+        {
+            opacity: 1;
+        }
+    }
+    .image:nth-child(1) 
+    {
+        animation-delay: 0.5s;
+    }
+    .image:nth-child(2) 
+    {
+        animation-delay: 1s;
+    }
+    .image:nth-child(3) 
+    {
+        animation-delay: 1.5s;
+    }
+    .image:nth-child(4) 
+    {
+        animation-delay: 2s;
+    }
+    .image:nth-child(5) 
+    {
+        animation-delay: 2.5s;
+    }
+</style>
+<body>
+    <center>
+        <h1>HELLO, MY SITE!</h1>
+    </center>
+    <img class="image1" src="./src/calc.png" alt="Calc.png">
+    <img class="image2" src="./src/book.png" alt="Book.png">
+    <img class="image3" src="./src/paper.png" alt="Paper.png">
+    <img class="image4" src="./src/pallete.png" alt="Pall.png">
+    <div class="imgCon">
+        <img class="image5" src="./src/pencil.png" alt="Pencil.png">
+    </div>
+</body>
+</html>
