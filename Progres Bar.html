@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog Bar</title>
+</head>
+<style>
+    .progBg 
+    {
+        width: 500px;
+        height: 20px;
+        border: 5px solid #08a696;
+        overflow: hidden;
+        border-radius: 500px;
+        position: relative;
+    }
+    .progFr 
+    {
+        height: 100%;
+        background-color: #26ffdf;
+        width: 60px;
+        border-radius: 10px;
+        position: absolute;
+        animation: move 7s linear infinite;
+    }
+    @keyframes move 
+    {
+        0% { left: calc(100% - 60px); }
+        50% { left: 0; }
+        100% { left: calc(100% - 60px); }
+    }
+</style>
+<body>
+    <div class="progBg">
+        <div class="progFr"></div>
+    </div>
+</body>
+</html>
